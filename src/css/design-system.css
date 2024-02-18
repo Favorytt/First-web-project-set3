@@ -1,0 +1,177 @@
+/* fonts.google.com */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&family=Poppins:wght@200;400;800&family=Roboto:wght@500;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: "Roboto", sans-serif;
+*/
+
+:root {
+  --color1: black;
+  --color2: white;
+  --color3: lightgreen;
+  --fontSize1: 60px;
+  --fontSize2: 50px;
+  --fontSize3: 40px;
+  --fontSize4: 36px;
+  --fontSize5: 30px;
+  --fontSize6: 20px;
+  --fontSize7: 18px;
+  --fontSize8: 16px;
+  --fontFamily1: "Montserrat", sans-serif;
+  --fontFamily2: "Poppins", sans-serif;
+  --fontFamily3: "Roboto", sans-serif;
+  --sectionPadding: 70px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily2);
+}
+
+.btn {
+  width: 150px;
+  padding: 12px;
+  border-radius: 75px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color3);
+  transition: all 2s ease;
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--color1);
+  font-family: var(--fontFamily2);
+  font-size: var(--fontSize7);
+}
+
+.btn:hover {
+  background-color: var(--color1);
+}
+
+.btn:hover a {
+  color: var(--color3);
+}
+
+/* container */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+}
+
+/* responsive images */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+/* section heading */
+.sectionHeading {
+  text-transform: uppercase;
+  font-size: var(--fontSize3);
+  font-family: var(--fontFamily2);
+}
+
+/* section text */
+.sectionText {
+  line-height: 1.8;
+}
+
+/* flex class*/
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Header and Navbar starts */
+header {
+  background-color: var(--color1);
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo img {
+  width: 30px;
+  height: 30px;
+}
+
+nav .links {
+  display: flex;
+  gap: 20px;
+}
+
+nav .links a {
+  text-decoration: none;
+  color: var(--color2);
+  font-family: var(--fontFamily2);
+  transition: all 1s ease-in-out;
+}
+
+nav .links a:hover {
+  color: var(--color3);
+}
+
+nav .hambuger {
+  color: white;
+  cursor: pointer;
+  font-size: var(--fontSize5);
+  display: none;
+}
+
+/* Headers and Navbar ends  */
+
+/* responsive header and navbar section */
+/* from 0 to 768px */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  nav .hambuger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+
+  nav .links {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav .links.active {
+    display: flex;
+  }
+}
