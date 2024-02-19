@@ -140,6 +140,47 @@ nav .hambuger {
 
 /* Headers and Navbar ends  */
 
+/* Footer Section Starts */
+#footer-section {
+  padding-top: var(--sectionPadding);
+  padding-bottom: var(--sectionPadding);
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+.footer-content--left-links > div > a {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.footer-content--left-links > div > a:hover {
+  color: var(--color3);
+}
+
+.footer-content--right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-content--right div:nth-child(1) {
+  color: var(--color3);
+  font-family: var(--fontFamily1);
+  font-size: var(--fontSize6);
+}
+
+.footer-content--right .social-links {
+  display: flex;
+  gap: 15px;
+  font-size: var(--fontSize6);
+  cursor: pointer;
+}
+
+.footer-content--right .social-links > i:hover {
+  color: var(--color3);
+}
+/* Footer section ends */
+
 /* responsive header and navbar section */
 /* from 0 to 768px */
 @media (max-width: 768px) {

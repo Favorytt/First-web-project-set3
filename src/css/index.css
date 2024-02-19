@@ -124,6 +124,36 @@
 .pricing-content--bottom .card button {
   align-self: center;
 }
+/* pricing section ends */
+
+/* partners section starts */
+#partners-section {
+  background-color: var(--color2);
+  padding-top: var(--sectionPadding);
+  padding-bottom: var(--sectionPadding);
+  margin-top: 40px;
+  color: var(--color1);
+}
+
+.partners-content--top {
+  text-align: center;
+  font-family: var(--fontFamily2);
+}
+
+.partners-content--bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  /* justify-items: center; */
+}
+
+.partners-content--bottom img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* partners section ends */
 
 /* responsive choose us section starts */
 /* <= 1000px */
@@ -164,3 +194,12 @@
   }
 }
 /* responsive pricing us section ends */
+
+/* responsive partners */
+/* <= 760px */
+@media (max-width: 760px) {
+  .partners-content--bottom {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
