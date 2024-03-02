@@ -76,6 +76,7 @@ font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  gap: 15px;
 }
 
 /* section heading */
@@ -180,6 +181,27 @@ nav .hambuger {
   color: var(--color3);
 }
 /* Footer section ends */
+
+/* for icons starts */
+.icons {
+  cursor: pointer;
+  position: fixed;
+  bottom: 10%;
+  right: 20px;
+}
+.icons .icon1 img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.icons .icon2 img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* for icons end */
 
 /* responsive header and navbar section */
 /* from 0 to 768px */
