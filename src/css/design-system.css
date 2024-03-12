@@ -33,6 +33,11 @@ font-family: "Roboto", sans-serif;
   font-family: var(--fontFamily2);
 }
 
+/* html scroll behaviour */
+html {
+  scroll-behavior: smooth;
+}
+
 .btn {
   width: 150px;
   padding: 12px;
